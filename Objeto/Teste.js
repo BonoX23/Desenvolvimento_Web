@@ -1,12 +1,3 @@
-function Produto2()
-
-
-
-
-
-
-
-
 // Funções construtoras
 function Produto(nome, preco, desc) {
     this.nome = nome
