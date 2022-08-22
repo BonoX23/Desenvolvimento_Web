@@ -1,11 +1,15 @@
-// Funções construtoras
-function Produto(nome, preco, desc) {
-    this.nome = nome
-    this.getPrecoComDesconto = () => {
-        return preco * (1 - desc)
+const sequencia = {
+    _valor: 1, // convenção
+    get valor() { return this._valor++ },
+    set valor(valor) {
+        if (valor > this._valor) {
+            this._valor = valor
+        }
     }
 }
 
-const p1 = new Produto('Caneta', 7.99, 0.15)
-const p2 = new Produto('Notebook', 2998.99, 0.25)
-console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
+console.log(sequencia.valor, sequencia.valor)
+sequencia.valor = 1000
+console.log(sequencia.valor, sequencia.valor)
+sequencia.valor = 900
+console.log(sequencia.valor, sequencia.valor)
