@@ -1,4 +1,4 @@
-const sequencia = {
+/*const sequencia = {
     _valor: 1, // convenção
     get valor() { return this._valor++ },
     set valor(valor) {
@@ -13,3 +13,18 @@ sequencia.valor = 1000
 console.log(sequencia.valor, sequencia.valor)
 sequencia.valor = 900
 console.log(sequencia.valor, sequencia.valor)
+
+
+*/
+
+// function declaration
+
+
+function soma(A, B) {
+    return console.log("X = "
+        A + B)
+
+
+}
+
+soma(3 + 5)
